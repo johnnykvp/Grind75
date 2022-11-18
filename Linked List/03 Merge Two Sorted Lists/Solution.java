@@ -41,8 +41,10 @@ class Solution {
         if (list2 == null) {
             return list1;
         }
+        // Start with a dummy header (return the next of dummy at the end for the actual head)
         ListNode dummy = new ListNode();
         ListNode current = dummy;
+        // Iterate until one list is empty
         while (list1 != null && list2 != null) {
             if (list1.val < list2.val) {
                 current.next = list1;
@@ -54,6 +56,7 @@ class Solution {
             }
             current = current.next;
         }
+        // Check the non-empty list
         if (list1 != null) {
             current.next = list1;
         }
