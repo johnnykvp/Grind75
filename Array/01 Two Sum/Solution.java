@@ -10,7 +10,6 @@ class Solution {
         */
         
         /* Approach
-        Nested for loops:
         for loop iterates through array nums
             for loop iterates through next array nums
                 if statement checks num1 + num2 = target
@@ -37,7 +36,6 @@ class Solution {
         O(n^2) runtime, iterating through nested for loops
         O(1) space, no additional data structures created
         
-        HashMap:
         map stores num value, index
         for loop iterates through array nums
             add num value, index to map
