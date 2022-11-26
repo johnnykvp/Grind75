@@ -7,7 +7,6 @@ class Solution {
         */
         
         /* Approach
-        Nested for loops:
         int stores max profit
         for loop iterates through array prices
             for loop iterates through next prices
