@@ -50,7 +50,7 @@ class Solution {
         int low = 0;
         int high = nums.length - 1;
         int mid = 0;
-        // When equal, it will loop over and over
+        // When equal, it will loop over & over
         while (low <= high) {
             mid = (low + high) / 2;
             if (nums[mid] == target) {
