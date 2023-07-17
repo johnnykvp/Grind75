@@ -36,7 +36,7 @@ class Solution {
 
 
         /* Approach
-        Recursion:
+        Recursion: O(n) runtime, O(n) space
         if statement checks node = null
             return null (to exit recursive loop)
         node stores temp left copy value
