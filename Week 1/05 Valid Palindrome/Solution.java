@@ -23,8 +23,8 @@ class Solution {
         Stack + Queue: O(n) runtime, O(n) space
         convert string to all lowercase
         remove non-alphanumeric chars
-        stack stores given string chars
-        queue stores given string chars
+        Stack stores given string chars
+        Queue stores given string chars
         for loop iterates through string chars
             add chars to stack
             add chars to queue
