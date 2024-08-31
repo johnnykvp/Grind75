@@ -1,11 +1,11 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         /* Clarify
-        Given int[] and single int
-        Return index of two nums that add to target as int[]
-        Can there be more than one solution? (No, just one solution)
-        Can the same element be used twice? (No, element can only be used once)
-        Can there be duplicate nums in array? (Yes, may have duplicate nums)
+        given int[] and single int
+        return index of two nums that add to target as int[]
+        can there be more than one solution? (no, just one solution)
+        can the same element be used twice? (no, element can only be used once)
+        can there be duplicate nums in array? (yes, may have duplicate nums)
         */
 
         /* Example
@@ -19,8 +19,8 @@ class Solution {
         */
 
         /* Approach
-        Create HashMap using key: num and value: index (index is the value because we want it as output later)
-        Iterate through nums[] using single for loop
+        HashMap stores key: num, value: index (index is the value because we want it as output later)
+        iterate through nums[] using single for loop
             if statement checks target - current index value = num is already in the map
                 then return new int[] with the num already in map, and current index value
             else
@@ -50,7 +50,7 @@ class Solution {
 
         /* Optimize
         O(n) runtime, iterates through single for loop
-        O(n) space, create HashMap object
+        O(n) space, create HashMap object based on given array length
         */
     }
 }
