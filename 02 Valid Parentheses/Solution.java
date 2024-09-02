@@ -88,7 +88,7 @@ class Solution {
         */
 
         /* Optimize
-        O(n) runtime, iterates through single for loop
+        O(n) runtime, iterates through single for loop based on given string length
         O(n) space, create Stack object based on given string length
         */
     }
