@@ -50,7 +50,7 @@ class Solution {
 
         /* Optimize
         O(n) runtime, iterates through single for loop based on given array length
-        O(n) space, create HashMap object based on given array length
+        O(n) space, create HashMap data structure based on given array length
         */
     }
 }

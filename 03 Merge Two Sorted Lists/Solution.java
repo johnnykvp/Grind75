@@ -83,7 +83,7 @@ class Solution {
 
         /* Optimize
         O(n) runtime, while loop iterates through given list length
-        O(n) space, create ListNode object based on given list length
+        O(n) space, create Linked List data structure based on given list length
         */
     }
 }
