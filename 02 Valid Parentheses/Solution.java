@@ -1,6 +1,6 @@
 class Solution {
     public boolean isValid(String s) {
-        /* Clarify
+        /* Clarify.
         given a string with brackets
         return boolean if string is valid
         valid if:
