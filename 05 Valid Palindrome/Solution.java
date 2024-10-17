@@ -74,7 +74,7 @@ class Solution {
         */
 
         /* Optimize
-        O(n) runtime, iterates through seperate for loops based on given String length
+        O(n) runtime, iterates through separate for loops based on given String length
         O(n) space, create Stack data structure bassed on given String length
         can solve without creating a data structure for O(1) space
         */
