@@ -67,7 +67,7 @@ class Solution {
         
         Input: s = "Race a Car"
         format = "raceacar" >> backwards = "racaecar"
-        ... "e" != "a" >> return false
+        .. "e" != "a" >> return false
 
         Input: s = " "
         format = "" >> backwards = "" >> return false
