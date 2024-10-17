@@ -1,4 +1,4 @@
-# Grind75
+# Grind 75
 Technical Interview Practice
 
 Problems - https://www.techinterviewhandbook.org/grind75
