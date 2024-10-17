@@ -1,6 +1,6 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        /* Clarify.
+        /* Clarify
         given int[] and single int
         return index of two nums that add to target as int[]
         can there be more than one solution? (no, just one solution)
