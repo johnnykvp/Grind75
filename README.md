@@ -1,4 +1,5 @@
 # Grind75
-Technical interview practice
+Technical Interview Practice
 
-https://www.techinterviewhandbook.org/grind75
+Problems - https://www.techinterviewhandbook.org/grind75
+Notes - https://docs.google.com/spreadsheets/d/1cJs6BoRW33lmrlTUIG1u90y2pFgrnnXgtF0jyQST3MY/edit?usp=sharing
