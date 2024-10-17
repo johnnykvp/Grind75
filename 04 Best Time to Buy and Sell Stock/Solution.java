@@ -1,6 +1,6 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        /* Clarify
+        /* Clarify.
         given int array that stores stock prices, where index represents day
         goal is to get max profit by choosing a single day to buy stock, and another day to sell in the future
         return int max profit amount
