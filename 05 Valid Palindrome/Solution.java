@@ -1,6 +1,6 @@
 class Solution {
     public boolean isPalindrome(String s) {
-        /* Clarify
+        /* Clarify.
         palindrome: the same word forwards and backwards
         given a string
         return true if palindrome or false if not
