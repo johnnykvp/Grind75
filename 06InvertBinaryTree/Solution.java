@@ -38,7 +38,7 @@ class Solution {
         recursive call on left node
         recursive call on right node
         return root
-        using BFS to visit nearby nodes first
+        uses DFS by recursively visiting all left nodes first, then right nodes
         */
 
         if (root == null) {
