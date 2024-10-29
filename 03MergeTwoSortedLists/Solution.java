@@ -16,17 +16,6 @@ class Solution {
         return the head of the sorted list 
         */
 
-        /* Example
-        Input: list1 = [1,2], list2 = [1,3,4]
-        Output: [1,1,2,3,4]
-
-        Input: list1 = [], list2 = []
-        Output: []
-
-        Input: list1 = [], list2 = [0]
-        Output: [0]
-        */
-
         /* Approach
         create new ListNode to hold the sorted list head
         create new ListNode dummy to hold current value
@@ -72,17 +61,20 @@ class Solution {
         1 = 1 >> current = [null,1] >> list1 = [2]
         2 > 1 >> current = [null,1,1] >> list2 = [3,4]
         2 < 3 >> current = [null,1,1,2] >> list1 = null
-        list2 != null >> current = [null,1,1,2,3,4] >> return [1,1,2,3,4]
+        list2 != null >> current = [null,1,1,2,3,4]
+        Output: [1,1,2,3,4]
 
         Input: list1 = [], list2 = []
-        skip if statements >> return null
+        skip loop >> current = [null, null]
+        Output: null
 
         Input: list1 = [], list2 = [0]
-        list2 != null >> current = [null,0] >> return [0]
+        list2 != null >> current = [null,0]
+        Output: [0]
         */
 
         /* Optimize
-        O(n) runtime, while loop iterates through given list length
+        O(n) runtime, iterates through while loop based on given list length
         O(n) space, create Linked List data structure based on given list length
         */
     }

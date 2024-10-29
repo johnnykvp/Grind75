@@ -10,20 +10,6 @@ class Solution {
         can be given non-bracket chars? (no, assume all brackets)
         */
 
-        /* Example
-        Input: s = "()[]"
-        Output: true
-
-        Input: s = "([])"
-        Output: true
-
-        Input: s = "(]"
-        Output: false
-
-        Input: s = ")("
-        Output: false
-        */
-
         /* Approach
         if statement checks string length is odd
             return false
@@ -45,50 +31,54 @@ class Solution {
         if (s.length() % 2 != 0) {
             return false;
         }
-        Stack<Character> opens = new Stack<>();
+        Stack<Character> openBrackets = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
-                opens.push(s.charAt(i));
+                openBrackets.push(s.charAt(i));
             }
             // check Stack is empty in case close bracket is given before open bracket
-            else if (s.charAt(i) == ')' && !opens.isEmpty() && opens.peek() == '(') {
-                opens.pop();
+            else if (s.charAt(i) == ')' && !openBrackets.isEmpty() && openBrackets.peek() == '(') {
+                openBrackets.pop();
             }
-            else if (s.charAt(i) == '}' && !opens.isEmpty() && opens.peek() == '{') {
-                opens.pop();
+            else if (s.charAt(i) == '}' && !openBrackets.isEmpty() && openBrackets.peek() == '{') {
+                openBrackets.pop();
             }
-            else if (s.charAt(i) == ']' && !opens.isEmpty() && opens.peek() == '[') {
-                opens.pop();
+            else if (s.charAt(i) == ']' && !openBrackets.isEmpty() && openBrackets.peek() == '[') {
+                openBrackets.pop();
             }
             else {
                 return false;
             }
         }
-        return opens.isEmpty();
+        return openBrackets.isEmpty();
 
         /* Test
         Input: s = "()[]"
-        i = 0 >> == ( >> opens = "("
-        i = 1 >> == ) && peek == ( >> opens = ""
-        i = 2 >> == [ >> opens = "["
-        i = 3 >> == ] && peek == [ >> opens = "" >> return true
+        i = 0 >> == ( >> openBrackets = "("
+        i = 1 >> == ) && peek == ( >> openBrackets = ""
+        i = 2 >> == [ >> openBrackets = "["
+        i = 3 >> == ] && peek == [ >> openBrackets = ""
+        Output: true
 
         Input: s = "([])"
-        i = 0 >> == ( >> opens = "("
-        i = 1 >> == [ >> opens = "(["
-        i = 2 >> == ] >> peek == [ >> opens = "("
-        i = 3 >> == ) >> peek == ( >> opens = "" >> return true
+        i = 0 >> == ( >> openBrackets = "("
+        i = 1 >> == [ >> openBrackets = "(["
+        i = 2 >> == ] >> peek == [ >> openBrackets = "("
+        i = 3 >> == ) >> peek == ( >> openBrackets = ""
+        Output: true
 
         Input: s = "(]"
-        i = 0 >> == ( >> opens = "("
-        i = 1 >> == ] >> peek != [ >> return false
+        i = 0 >> == ( >> openBrackets = "("
+        i = 1 >> == ] >> peek != [
+        Output: false
 
         Input: s = ")("
-        i = 0 >> == ) >> peek isEmpty >> return false
+        i = 0 >> == ) >> peek isEmpty
+        Output: false
         */
 
         /* Optimize
-        O(n) runtime, iterates through single for loop based on given string length
+        O(n) runtime, iterates through for loop based on given string length
         O(n) space, create Stack data structure based on given string length
         */
     }

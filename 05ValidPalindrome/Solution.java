@@ -8,20 +8,6 @@ class Solution {
         remove all non-alphanumeric chars
         */
 
-        /* Example
-        Input: s = "Pop"
-        "pop" -> "pop" is a palindrome
-        Output: true
-
-        Input: s = "Race a Car"
-        "raceacar" -> "racaecar" is not a palindrome
-        Output: false
-
-        Input: s = " "
-        "" empty string is a palindrome
-        Output: true
-        */
-
         /* Approach
         String stores lowercase, alphanumeric value
         for loop iterates through given string
@@ -63,14 +49,17 @@ class Solution {
         format = "pop" >> backwards = "pop"
         i = 0 >> "p" == "p" >> backwards = "op"
         i = 1 >> "o" == "o" >> backwards = "p"
-        i = 2 >> "p" == "p" >> backwards = "" >> return true
+        i = 2 >> "p" == "p" >> backwards = ""
+        Output: true
         
         Input: s = "Race a Car"
         format = "raceacar" >> backwards = "racaecar"
-        ... "e" != "a" >> return false
+        ... "e" != "a"
+        Output: false
 
         Input: s = " "
-        format = "" >> backwards = "" >> return false
+        format = "" >> backwards = ""
+        Output: false
         */
 
         /* Optimize
@@ -112,17 +101,20 @@ class Solution {
         Input: s = "Pop"
         format = "pop" >> right = 2
         left = 0 >> "p" == "p" >> right = 1
-        left = 1 >> "o" == "o" >> right = 0 >> return true
+        left = 1 >> "o" == "o" >> right = 0
+        Output: true
 
-         Input: s = "Race a Car"
-         format = "raceacar" >> right = 7
-         left = 0 >> "r" == "r" >> right = 6
-         left = 1 >> "a" == "a" >> right = 5
-         left = 2 >> "c" == "c" >> right = 4
-         left = 3 >> "e" != "a" >> return false
+        Input: s = "Race a Car"
+        format = "raceacar" >> right = 7
+        left = 0 >> "r" == "r" >> right = 6
+        left = 1 >> "a" == "a" >> right = 5
+        left = 2 >> "c" == "c" >> right = 4
+        left = 3 >> "e" != "a"
+        Output: false
 
-         Input: s = " "
-         format = "" >> right = -1 >> return true
+        Input: s = " "
+        format = "" >> right = -1
+        Output: true
         */
     }
 }

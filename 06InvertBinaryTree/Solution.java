@@ -22,12 +22,6 @@ class Solution {
         will the tree need to be sorted? (no, can be given in any order)
         */
 
-        /* Example
-                    4                               4
-            2               7       >>      7               2
-        1       3       6       9       9       6       3       1
-        */
-
         /* Approach
         recursively iterate through nodes
         if statement checks node is null
@@ -52,13 +46,19 @@ class Solution {
         return root;
 
         /* Test
+        Input:
                     4            1st pass           4
             2               7       >>      7               2
         1       3       6       9       6       9       1       3
         2nd pass
                     4
             7               2       3rd pass >> null nodes, no changes
-        9       6       3       1   return root
+        9       6       3       1   
+        Output: ^
+        
+        Input: null
+        if statement catches null
+        Output: null
         */
 
         /* Optimize
