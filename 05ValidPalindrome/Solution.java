@@ -1,28 +1,27 @@
 class Solution {
+    /* Clarify
+    palindrome: the same word forwards and backwards
+    given a string
+    return true if palindrome or false if not
+    convert all uppercase letters to lowercase
+    remove all non-alphanumeric chars
+    */
+
+    /* Approach
+    String stores lowercase, alphanumeric value
+    for loop iterates through given string
+        if statement checks char is letter or digit
+            add char to String as lowercase
+    Stack stores backwards spelling of String
+    for loop iterates through formatted string
+        add char to Stack
+    for loop iterates through formatted string and Stack
+        if statement checks current char != Stack peek
+            return false
+        remove from Stack
+    return true
+    */
     public boolean isPalindrome(String s) {
-        /* Clarify
-        palindrome: the same word forwards and backwards
-        given a string
-        return true if palindrome or false if not
-        convert all uppercase letters to lowercase
-        remove all non-alphanumeric chars
-        */
-
-        /* Approach
-        String stores lowercase, alphanumeric value
-        for loop iterates through given string
-            if statement checks char is letter or digit
-                add char to String as lowercase
-        Stack stores backwards spelling of String
-        for loop iterates through formatted string
-                add char to Stack
-        for loop iterates through formatted string and Stack
-            if statement checks current char != Stack peek
-                return false
-            remove from Stack
-        return true
-        */
-
         /*
         String format = "";
         for (int i = 0; i < s.length(); i++) {
@@ -96,25 +95,24 @@ class Solution {
             right--;
         }
         return true;
-
-        /* Re-test
-        Input: s = "Pop"
-        format = "pop" >> right = 2
-        left = 0 >> "p" == "p" >> right = 1
-        left = 1 >> "o" == "o" >> right = 0
-        Output: true
-
-        Input: s = "Race a Car"
-        format = "raceacar" >> right = 7
-        left = 0 >> "r" == "r" >> right = 6
-        left = 1 >> "a" == "a" >> right = 5
-        left = 2 >> "c" == "c" >> right = 4
-        left = 3 >> "e" != "a"
-        Output: false
-
-        Input: s = " "
-        format = "" >> right = -1
-        Output: true
-        */
     }
+    /* Re-test
+    Input: s = "Pop"
+    format = "pop" >> right = 2
+    left = 0 >> "p" == "p" >> right = 1
+    left = 1 >> "o" == "o" >> right = 0
+    Output: true
+
+    Input: s = "Race a Car"
+    format = "raceacar" >> right = 7
+    left = 0 >> "r" == "r" >> right = 6
+    left = 1 >> "a" == "a" >> right = 5
+    left = 2 >> "c" == "c" >> right = 4
+    left = 3 >> "e" != "a"
+    Output: false
+
+    Input: s = " "
+    format = "" >> right = -1
+    Output: true
+    */
 }
