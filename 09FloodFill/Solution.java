@@ -35,14 +35,14 @@ class Solution {
     }
 
     public void fill(int[][] image, int sr, int sc, int ogColor, int newColor) {
-            if (sr < 0 || sr >= image.length || sc < 0 || sc >= image[0].length || image[sr][sc] != ogColor) {
-                return;
-            }
-            image[sr][sc] = newColor;
-            fill(image,sr - 1,sc,ogColor,newColor);
-            fill(image,sr + 1,sc,ogColor,newColor);
-            fill(image,sr,sc - 1,ogColor,newColor);
-            fill(image,sr,sc + 1,ogColor,newColor);
+        if (sr < 0 || sr >= image.length || sc < 0 || sc >= image[0].length || image[sr][sc] != ogColor) {
+            return;
+        }
+        image[sr][sc] = newColor;
+        fill(image,sr - 1,sc,ogColor,newColor);
+        fill(image,sr + 1,sc,ogColor,newColor);
+        fill(image,sr,sc - 1,ogColor,newColor);
+        fill(image,sr,sc + 1,ogColor,newColor);
     }
     /* Test
     Input: image = [[1,1,1],
