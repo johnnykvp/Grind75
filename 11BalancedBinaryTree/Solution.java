@@ -41,6 +41,8 @@ class Solution {
         set balanced node to false
     return height max of left, right
     */
+
+    // Result stored in global variable, since we need to return int for the helper method
     private boolean balancedFlag = true;
 
     public boolean isBalanced(TreeNode root) {
