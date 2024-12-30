@@ -21,8 +21,9 @@ class Solution {
         remove from Stack
     return true
     */
+    
+    /*
     public boolean isPalindrome(String s) {
-        /*
         String format = "";
         for (int i = 0; i < s.length(); i++) {
             if (Character.isLetterOrDigit(s.charAt(i))) {
@@ -79,7 +80,7 @@ class Solution {
             subtract -1 from right-hand pointer
         return true
         */
-
+    public boolean isPalindrome(String s) {
         String format = "";
         for (int i = 0; i < s.length(); i++) {
             if (Character.isLetterOrDigit(s.charAt(i))) {
