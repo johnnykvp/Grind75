@@ -44,42 +44,42 @@ class Solution {
         return true;
         */
 
-        /* Test
-        Input: s = "Pop"
-        format = "pop" >> backwards = "pop"
-        i = 0 >> "p" == "p" >> backwards = "op"
-        i = 1 >> "o" == "o" >> backwards = "p"
-        i = 2 >> "p" == "p" >> backwards = ""
-        Output: true
+    /* Test
+    Input: s = "Pop"
+    format = "pop" >> backwards = "pop"
+    i = 0 >> "p" == "p" >> backwards = "op"
+    i = 1 >> "o" == "o" >> backwards = "p"
+    i = 2 >> "p" == "p" >> backwards = ""
+    Output: true
         
-        Input: s = "Race a Car"
-        format = "raceacar" >> backwards = "racaecar"
-        ... "e" != "a"
-        Output: false
+    Input: s = "Race a Car"
+    format = "raceacar" >> backwards = "racaecar"
+    ... "e" != "a"
+    Output: false
 
-        Input: s = " "
-        format = "" >> backwards = ""
-        Output: false
-        */
+    Input: s = " "
+    format = "" >> backwards = ""
+    Output: false
+    */
 
-        /* Optimize
-        O(n) runtime, iterates through separate for loops based on given String length
-        O(n) space, create Stack data structure bassed on given String length
-        can solve without creating a data structure for O(1) space
-        */
+    /* Optimize
+    O(n) runtime, iterates through separate for loops based on given String length
+    O(n) space, create Stack data structure bassed on given String length
+    can solve without creating a data structure for O(1) space
+    */
 
-        /* Re-approach
-        String stores lowercase, alphanumeric value
-        for loop iterates through given string
-            if statement checks is letter or digit
-                add char to formatted string
-        int stores right-hand pointer
-        for loop iterates through two pointers in given String
-            if statement checks char at left-hand pointer != char at right-hand pointer
-                return false
-            subtract -1 from right-hand pointer
-        return true
-        */
+    /* Re-approach
+    String stores lowercase, alphanumeric value
+    for loop iterates through given string
+        if statement checks is letter or digit
+            add char to formatted string
+    int stores right-hand pointer
+    for loop iterates through two pointers in given String
+        if statement checks char at left-hand pointer != char at right-hand pointer
+            return false
+        subtract -1 from right-hand pointer
+    return true
+    */
     public boolean isPalindrome(String s) {
         String format = "";
         for (int i = 0; i < s.length(); i++) {
