@@ -38,6 +38,16 @@ public class Solution {
         return false;
     }
     */
+    
+    /* Test
+    Input: head = [3,2,0,-4], pos = 1
+    storage = [3,2,0,-4] >> storage contains [2]
+    Output: true
+    
+    Input: head = [1], pos = -1
+    storage = [1] >> head.next = null
+    Output: false
+    */
 
     /* Optimize
     O(n) runtime, iterates through while loop based on given linked list size
@@ -74,7 +84,7 @@ public class Solution {
         }
         return false;
     }
-    /* Test
+    /* Re-test
     Input: head = [3,2,0,-4], pos = 1
     head.next = 2, fast.next.next = 0 >> head.next = 0, fast.next.next = 2 >>
     head.next = -4, fast.next.next = -4
